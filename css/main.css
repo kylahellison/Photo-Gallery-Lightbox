@@ -1,0 +1,156 @@
+/*****
+GENERAL
+*****/
+
+@media (min-width: 481px) {
+
+	* {
+		box-sizing: border-box;
+	}
+
+	/*****
+	SEARCH BOX
+	*****/
+
+	header {
+		text-align:center;
+		background-color: white;
+	}
+
+	form {
+		margin: 40px auto;
+	}
+
+	.search {
+		width: 460px;
+		padding: 8px 15px;
+		border: 2px solid darkgray;
+	}
+
+	/*****
+	PHOTOS
+	*****/
+
+	.gridcontainer {
+		width: 980px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.image {
+		margin: 15px;
+		width: 200px;
+		height: 200px;
+	}
+
+	.noleftm{
+		margin-left: 0;
+	}
+
+	.norightm {
+		margin-right: 0;
+	}
+
+	/*****
+	FANCY BOX
+	*****/
+
+		.fancybox-nav span {
+			visibility: visible;
+		}
+
+		.fancybox-prev span {
+			left: -70px;
+			background-position: 0 -36px;
+		}
+
+		.fancybox-next span {
+			right: -70px;
+			background-position: 0 -72px;
+		}
+
+		.fancybox-title-float-wrap .child {
+			white-space: normal;
+		}
+
+		/*move the caption down! off the picture*/
+		.fancybox-title-float-wrap {
+			margin-bottom: -70px;
+		}
+
+		.fancybox-title-float-wrap .child {
+			width: 600px;
+		}
+}
+
+/****
+MEDIA QUERY FOR PHONES
+*****/
+
+@media (max-width: 480px) {
+	.gridcontainer {
+		width: 100%;
+		margin: 0 auto;
+		display: inline-block;
+	}
+	.image {
+		margin: 30px auto;
+		width: 200px;
+		height: 200px;
+	}
+
+
+	/*****
+	SEARCH BOX
+	*****/
+
+	header {
+		text-align:center;
+		background-color: white;
+	}
+
+	form {
+		margin: 40px auto;
+	}
+
+	.search {
+		width: 75%;
+		padding: 8px 15px;
+		border: 2px solid darkgray;
+	}
+
+}
+
+
+
+	.fancybox-title-float-wrap .child {
+		width: 200px;
+		white-space: normal;
+	}
+
+
+	.fancybox-title-float-wrap {
+		margin-bottom: -130px;
+	}
+
+
+
+/*
+FOR MY USE - responsive tablet
+
+@media (min-width: 481px) {
+	.gridcontainer {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.image {
+		margin: 15px;
+		width: 200px;
+		height: 200px;
+	}
+*/
